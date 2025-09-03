@@ -5,8 +5,8 @@ def create_series() -> pd.Series :
     series = pd.Series(tab)
     return series
 
-Test = create_series()
-print(Test)
+exo1 = create_series()
+print(exo1)
 
 def series_operations(series: pd.Series) -> (int, float, float) :
     somme = series.sum()
@@ -14,8 +14,8 @@ def series_operations(series: pd.Series) -> (int, float, float) :
     ecart = series.std()
     return (somme, moyenne, ecart)
 
-t = create_series()
-print(series_operations(t))
+exo2 = create_series()
+print(series_operations(exo2))
 
 
 def create_dataframe(file_path: str) -> pd.DataFrame:
@@ -23,8 +23,8 @@ def create_dataframe(file_path: str) -> pd.DataFrame:
     return read
 file_path = 'orders.csv'
 
-creation = create_dataframe(file_path)
-print(creation)
+exo4 = create_dataframe(file_path)
+print(exo4)
 
 
 

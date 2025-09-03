@@ -28,10 +28,14 @@ print(troisieme_un)
 
 
 def dataframe_operations(data: pd.DataFrame) -> (float, int, float, float, float) :
-    total_amount = data['total_price'].sum().round(2)
-    total_quantity = data['quantity'].sum()
-    mean_price = (total_amount / len(data)).round(2)
-    max_price = data['total_price'].max().round(2)
-    min_price = data['total_price'].min().round(2)
-    return total_amount, total_quantity, mean_price, max_price, min_price
+    montant_total = data['total_price'].sum().round(2)
+    quantite_total = data['quantity'].sum()
+    prix_moyen = (montant_total / len(data)).round(2)
+    montant_maximum = data['total_price'].max().round(2)
+    montant_minimum = data['total_price'].min().round(2)
+    return montant_total, quantite_total, prix_moyen, montant_maximum, montant_minimum
+
+exo4 = dataframe_operations(test)
+
+print(exo4)
 
