@@ -1,0 +1,258 @@
+{
+	"info": {
+		"_postman_id": "02b6ba3d-aec7-462b-90e1-8eeaca251704",
+		"name": "Digi - Jour 5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9260864"
+	},
+	"item": [
+		{
+			"name": "laureates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/laureates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"laureates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "laureates",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstname\": \"Amartya\",\n  \"surname\": \"Sen\",\n  \"born\": \"1933-11-03\",\n  \"died\": \"0000-00-00\",\n  \"bornCountry\": \"India\",\n  \"bornCountryCode\": \"IN\",\n  \"bornCity\": \"Santiniketan\",\n  \"gender\": \"male\",\n  \"prizes\": [\n    {\n      \"year\": 1998,\n      \"category\": \"economics\",\n      \"share\": 1,\n      \"motivation\": \"for his contributions to welfare economics\",\n      \"affiliations\": [\n        {\n          \"name\": \"Trinity College\",\n          \"city\": \"Cambridge\",\n          \"country\": \"United Kingdom\"\n        }\n      ]\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/laureates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"laureates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "laureates",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstname\": \"Pieter\",\n  \"surname\": \"Uberman\",\n  \"born\": \"1865-05-25\",\n  \"died\": \"1943-10-09\",\n  \"bornCountry\": \"the Netherlands\",\n  \"bornCountryCode\": \"NL\",\n  \"bornCity\": \"Zonnemaire\",\n  \"diedCountry\": \"the Netherlands\",\n  \"diedCountryCode\": \"NL\",\n  \"diedCity\": \"Amsterdam\",\n  \"gender\": \"male\",\n  \"prizes\": [\n    {\n      \"year\": 1902,\n      \"category\": \"physics\",\n      \"share\": 2,\n      \"motivation\": \"An updated motivation\",\n      \"affiliations\": [\n        {\n          \"name\": \"Updated University\",\n          \"city\": \"Amsterdam\",\n          \"country\": \"the Netherlands\"\n        }\n      ]\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/laureates/6683f1984f1b49630fc77d9c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"laureates",
+						"6683f1984f1b49630fc77d9c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "laureates",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/laureates/6683f1984f1b49630fc77d9d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"laureates",
+						"6683f1984f1b49630fc77d9d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "laureates statistics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/laureates_statistics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"laureates_statistics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prizes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/prizes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"prizes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prizes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"year\": 2002,\n  \"category\": \"medicine\",\n  \"laureates\": [\n    {\n      \"firstname\": \"Sydney\",\n      \"surname\": \"Brenner\",\n      \"motivation\": \"for their discoveries concerning genetic regulation of organ development and programmed cell death'\",\n      \"share\": 3\n    },\n    {\n      \"firstname\": \"H. Robert\",\n      \"surname\": \"Horvitz\",\n      \"motivation\": \"for their discoveries concerning genetic regulation of organ development and programmed cell death'\",\n      \"share\": 3\n    },\n    {\n      \"firstname\": \"John E.\",\n      \"surname\": \"Sulston\",\n      \"motivation\": \"for their discoveries concerning genetic regulation of organ development and programmed cell death'\",\n      \"share\": 3\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/prizes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"prizes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prizes",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"year\": 1909,\n  \"category\": \"peace\",\n  \"laureates\": [\n    {\n      \"firstname\": \"Augustus\",\n      \"surname\": \"Gloop\",\n      \"motivation\": \"for their prominent position in the international movement for peace and arbitration\",\n      \"share\": 2\n    },\n    {\n      \"firstname\": \"Paul Henri\",\n      \"surname\": \"d'Estournelles de Constant\",\n      \"motivation\": \"Another motivation that lead to peace\",\n      \"share\": 10\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/prizes/6683f1b44f1b49630fc783b7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"prizes",
+						"6683f1b44f1b49630fc783b7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prizes",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/prizes/6683f1b44f1b49630fc783ba",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"prizes",
+						"6683f1b44f1b49630fc783ba"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prize statistics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/prizes_statistics?start=1905&end=1998&categories=chemistry&categories=economics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"prizes_statistics"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "1905"
+						},
+						{
+							"key": "end",
+							"value": "1998"
+						},
+						{
+							"key": "categories",
+							"value": "chemistry"
+						},
+						{
+							"key": "categories",
+							"value": "economics"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
