@@ -21,7 +21,7 @@ print(series_operations(exo2))
 def create_dataframe(file_path: str) -> pd.DataFrame:
     read = pd.read_csv(file_path)
     return read
-file_path = 'orders.csv'
+file_path = "orders.csv"
 
 exo4 = create_dataframe(file_path)
 print(exo4)

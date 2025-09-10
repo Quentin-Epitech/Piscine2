@@ -29,8 +29,8 @@ exo2 = pandas_excel_write(exemple, "sales.xlsx")
 
 
 def pandas_excel_selective_read(filename: str) -> pd.DataFrame:
-    lecture = pd.read_excel(filename, sheet_name='orders', skiprows = list(range(1, 11)), usecols=['product', 'total_price']) 
-    groupe = lecture.groupby('product', as_index=False).sum()
+    lecture = pd.read_excel(filename, sheet_name="orders", skiprows = list(range(1, 11)), usecols=["product", "total_price"]) 
+    groupe = lecture.groupby("product", as_index=False).sum()
     
     return groupe
 

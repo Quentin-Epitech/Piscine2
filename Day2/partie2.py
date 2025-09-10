@@ -1,4 +1,4 @@
-import pandas
+import pandas as pd
 import csv 
 
 def native_csv_read(file: str) -> list[tuple]:
@@ -10,7 +10,7 @@ def native_csv_read(file: str) -> list[tuple]:
             resultat.append((index,) + tuple(line))
    return resultat
  
-input_file = 'orders_semicolon.csv'
+input_file = "orders_semicolon.csv"
 t = native_csv_read(input_file)
 print(t)
 

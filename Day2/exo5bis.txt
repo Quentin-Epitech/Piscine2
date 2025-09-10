@@ -3,3 +3,13 @@ Smartphone,7,4911.92
 Headphones,4,753.38
 Printer,8,4701.49
 Keyboard,5,5
+product,quantity,total_price
+Smartphone,7,4911.92
+Headphones,4,753.38
+Printer,8,4701.49
+Keyboard,5,5
+product,quantity,total_price
+Smartphone,7,4911.92
+Headphones,4,753.38
+Printer,8,4701.49
+Keyboard,5,5

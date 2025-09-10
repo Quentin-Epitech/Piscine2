@@ -58,4 +58,4 @@ def display_square(size: int, char: chr) :
     for i in range(size):
         print(size*char)
 
-display_square(6, '*')
+display_square(6, "*")

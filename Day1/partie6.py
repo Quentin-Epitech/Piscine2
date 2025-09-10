@@ -49,7 +49,7 @@ def keep_strings(elements):
 t1 = remove_negatives([-1, 2, 3, 4, -5, 6, 7])
 print(t1)  
 
-t2 = keep_strings(['Hello', 1, 3, "spam", 5.5, (1, 2)])
+t2 = keep_strings(["Hello", 1, 3, "spam", 5.5, (1, 2)])
 print(t2)  
 
 
